@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>101 Days Tech Roadmap — Interactive App</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- jsPDF for PDF export -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>101 Days Tech Roadmap</h1>
+      <p class="tagline">2 sessions/day • 6 days learning, Sundays = fun • Offline-first, online for validation</p>
+      <div class="controls">
+        <button id="resetProgress">Reset Progress</button>
+        <button id="exportAllPDF">Export Week as PDF</button>
+        <label class="toggle"><input type="checkbox" id="showOnlyToday"> Show only today's week</label>
+      </div>
+      <div id="progressBar" class="progress"><div id="progressFill"></div></div>
+    </header><main id="app">
+  <aside id="sidebar">
+    <h3>Quick Legend</h3>
+    <ul>
+      <li><strong>Morning</strong>: Offline practice (1–2 hrs)</li>
+      <li><strong>Evening</strong>: Project / online check (1–2 hrs)</li>
+      <li><strong>Sunday</strong>: Fun / creative / chill</li>
+    </ul>
+    <h3>Phases</h3>
+    <ol>
+      <li>Digital Fluency</li>
+      <li>Communication & Creativity</li>
+      <li>Data & Research</li>
+      <li>Tools & Collaboration</li>
+      <li>Awareness & Portfolio</li>
+    </ol>
+  </aside>
+
+  <section id="roadmap"></section>
+</main>
+
+<footer>
+  <p>Made for Gen Z energy. Deploy to GitHub Pages: push these three files to a repo named <code>101-days-roadmap</code> and enable Pages from <code>main</code>.</p>
+</footer>
+
+  </div>  <script src="script.js"></script></body>
+</html>
